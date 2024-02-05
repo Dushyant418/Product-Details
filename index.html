@@ -14,7 +14,7 @@
         <div class="container max-w-[1320px] mx-auto px-[12px] flex items-center justify-between">
             <div class="flex justify-between py-[15px] w-full">
                 <div>
-                    <img src="./dist/images/logo-1.png" alt="logo-1" class="w-full">
+                    <img src="./dist/images/logo-1.png" alt="logo-1" class="w-full max-md:w-[62px] max-md:h-[64px]">
                 </div>
                 <div class="lg:block hidden">
                     <img src="./dist/images/4-min-11.png" alt="images" class="w-full">
@@ -29,29 +29,26 @@
         <div class="shadow-nav-shadow">
             <div class="container max-w-[1320px] mx-auto px-[12px]">
                 <div
-                    class=" max-lg:fixed max-lg:bg-white max-lg:z-40 max-lg:w-full max-lg:h-full max-lg:top-0 max-lg:justify-center items-center max-lg:right-[-100%] menulist max-lg:flex max-lg:items-center  ">
+                    class=" max-lg:fixed max-lg:bg-white max-lg:z-40 max-lg:w-full max-lg:h-full max-lg:top-0 max-lg:justify-center items-center max-lg:right-[-100%] menulist duration-500 max-lg:flex max-lg:items-center  ">
                     <ul class="  flex gap-[15px] justify-end py-[30px] max-lg:flex-col max-lg:items-center">
-                        <li><a href="#Home"
-                                class="text-[18px] leading-[21.09px] hover:font-semibold font-roboto text-black relative after:absolute after:h-[2px] after:w-0 after:inline-block after:bottom-[-1px] after:left-0 hover:after:w-full after:bg-black after:duration-300">HOME</a>
+                        <li><a href="#Home" class="text-[18px] leading-[21.09px] font-roboto text-black webkit">HOME</a>
                         </li>
                         <li><a href="#Home-2"
-                                class="text-[18px] leading-[21.09px] hover:font-semibold font-roboto text-black relative after:absolute after:h-[2px] after:w-0 after:inline-block after:bottom-[-1px] after:left-0 hover:after:w-full after:bg-black after:duration-300">SNEAKERS
+                                class="text-[18px] leading-[21.09px] font-roboto text-black webkit">SNEAKERS
                                 KOPEN</a></li>
                         <li><a href="#Home-3"
-                                class="text-[18px] leading-[21.09px] hover:font-semibold font-roboto text-black relative after:absolute after:h-[2px] after:w-0 after:inline-block after:bottom-[-1px] after:left-0 hover:after:w-full after:bg-black after:duration-300">INTERVIEWS</a>
+                                class="text-[18px] leading-[21.09px] font-roboto text-black webkit">INTERVIEWS</a>
                         </li>
                         <li><a href="#Home-4"
-                                class="text-[18px] leading-[21.09px] hover:font-semibold font-roboto text-black relative after:absolute after:h-[2px] after:w-0 after:inline-block after:bottom-[-1px] after:left-0 hover:after:w-full after:bg-black after:duration-300">SALE</a>
+                                class="text-[18px] leading-[21.09px] font-roboto text-black webkit">SALE</a>
                         </li>
-                        <li><a href="#H"
-                                class="text-[18px] leading-[21.09px] hover:font-semibold font-roboto text-black relative after:absolute after:h-[2px] after:w-0 after:inline-block after:bottom-[-1px] after:left-0 hover:after:w-full after:bg-black after:duration-300">SNEAKER
+                        <li><a href="#" class="text-[18px] leading-[21.09px] font-roboto text-black webkit">SNEAKER
                                 VAN DE
                                 DAG</a></li>
-                        <li><a href="#"
-                                class="text-[18px] leading-[21.09px] hover:font-semibold font-roboto text-black relative after:absolute after:h-[2px] after:w-0 after:inline-block after:bottom-[-1px] after:left-0 hover:after:w-full after:bg-black after:duration-300">SNEAKER
+                        <li><a href="#" class="text-[18px] leading-[21.09px] font-roboto text-black webkit">SNEAKER
                                 FORUM</a></li>
                         <li><a href="#Home-7"
-                                class="text-[18px] leading-[21.09px] hover:font-semibold font-roboto text-black relative after:absolute after:h-[2px] after:w-0 after:inline-block after:bottom-[-1px] after:left-0 hover:after:w-full after:bg-black after:duration-300">BLOG</a>
+                                class="text-[18px] leading-[21.09px] font-roboto text-black webkit">BLOG</a>
                         </li>
                     </ul>
                 </div>
@@ -218,13 +215,6 @@
             </div>
         </div>
     </section>
-
-
-
-
-
-
-
     <section id="Home-4">
         <div class="container max-w-[1320px] mx-auto px-[12px]">
             <h3 class="font-poppins text-[30px] leading-[45px] font-semibold pb-[20px]">RELATED PRODUCT</h3>
@@ -481,9 +471,9 @@
         card_1.forEach((card_1) => {
             const cardelement = document.createElement("div");
             cardelement.innerHTML = `
-           <div class="border rounded-[17px] max-w-[312px]">
-                <div class="overflow-hidden">
-                    <img src="${card_1.Image}" alt="" class="hover:scale-[1.1]">
+           <div class="border rounded-[17px] max-w-[312px] overflow-hidden">
+                <div>
+                    <img src="${card_1.Image}" alt="" class="hover:scale-[1.1] rounded-[17px]">
                 </div>
                 <div class="px-[14px] flex gap-[20px] pt-[18px] pb-[30px]">
                     <div>
@@ -521,8 +511,8 @@
         </div>
         <div class="flex items-center">
             <button
-                class="before:ease relative overflow-hidden before:origin-top-right before:-translate-x-full before:translate-y-12 before:-rotate-90 before:bg-[#28A745] before:transition-all before:duration-300 hover:text-white hover:shadow-black hover:before:-rotate-180 shadow-2xl before:absolute before:left-0 before:-ml-2 before:h-48 before:w-48  font-poppins text-[10px] leading-[12.5px] bg-black text-white py-[4px] px-[11px] rounded-[7px] text-nowrap">
-                <span class="relative z-10">${card_2.card_best}</span></button>
+            class="before:ease relative overflow-hidden before:origin-top-right before:-translate-x-full before:translate-y-12 before:-rotate-90 before:bg-[#FF0000] before:transition-all before:duration-300 hover:text-white hover:shadow-black hover:before:-rotate-180 shadow-2xl before:absolute before:left-0 before:-ml-2 before:h-48 before:w-48  font-poppins text-[10px] leading-[12.5px] bg-black text-white py-[4px] px-[11px] rounded-[7px] text-nowrap">
+            <span class="relative z-10">${card_2.card_best}</span></button>
         </div>
     </div>
     <div class="px-[19px] pb-[31px]">
